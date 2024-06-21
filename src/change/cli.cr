@@ -38,8 +38,8 @@ module Change
       end
 
       run("git", ["add", CHANGELOG, SHARD], dry_run)
-      run("git", ["commit", "-m\"Preparing release #{version}\""], dry_run)
-      run("git", ["tag", "v#{version}", "-a", "-m\"Release #{version}\""], dry_run)
+      run("git", ["commit", "-mPreparing release #{version}"], dry_run)
+      run("git", ["tag", "v#{version}", "-a", "-mRelease #{version}"], dry_run)
     end
 
     def show_diff(content, file : String)
