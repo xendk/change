@@ -1,0 +1,13 @@
+name: change
+version: 0.1.0
+
+authors:
+  - Thomas Fini Hansen <xen@xen.dk>
+
+targets:
+  change:
+    main: src/change-bin.cr
+
+crystal: '>= 1.11.2'
+
+license: MIT
