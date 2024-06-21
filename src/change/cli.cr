@@ -64,7 +64,7 @@ module Change
 
       repo = nil
       if $?.success?
-        repo = $1 if /^git@github.com:(.*).git$/ =~ output.strip
+        repo = $1 if /^git@github.com:(.*)(.git)?$/ =~ output.strip
       end
 
       repo
